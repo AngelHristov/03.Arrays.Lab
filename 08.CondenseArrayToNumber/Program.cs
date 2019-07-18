@@ -12,9 +12,11 @@ namespace _08.CondenseArrayToNumber
             while (array.Length > 1)
             {
                 int[] condensedArray = new int[array.Length - 1];
+                
                 for (int i = 0; i < array.Length - 1; i++)
                 {
                     int index = array[i] + array[i + 1];
+                    
                     condensedArray[i] = index;
                 }
                 array = condensedArray;
