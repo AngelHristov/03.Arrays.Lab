@@ -7,7 +7,10 @@ namespace _08.CondenseArrayToNumber
     {
         static void Main()
         {
-            int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] array = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
             
             while (array.Length > 1)
             {
